@@ -1,0 +1,7 @@
+port <%= port %>
+cluster-enabled yes
+cluster-config-file nodes-<%= port %>.conf
+cluster-node-timeout 5000
+appendonly yes
+daemonize yes
+pidfile pid<%= port %>
